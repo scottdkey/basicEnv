@@ -1,0 +1,1 @@
+TO build main.jar hit `CTRL + SHIFT + B` from vs code. This will billd
