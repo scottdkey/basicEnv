@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-kotlin",
+      "type": "shell",
+      "command": "kotlinc kotlin/main.kt -include-runtime -d kotlin/main.jar",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "run-kotlin",
+      "type": "shell",
+      "command": "java -jar kotlin/main.jar",
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    }
+  ]
+}
