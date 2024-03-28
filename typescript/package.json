@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node dist/index.js",
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "watch": "tsc -w",
     "dev": "nodemon dist/index.js"
   },
@@ -16,5 +16,8 @@
   "devDependencies": {
     "nodemon": "^3.1.0",
     "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.5"
   }
 }
