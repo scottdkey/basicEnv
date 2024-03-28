@@ -1,1 +1,7 @@
-console.log('hello')
+const main = () => {
+  console.log('main app')
+}
+
+main()
+
+
